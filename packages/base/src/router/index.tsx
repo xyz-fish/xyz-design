@@ -1,6 +1,6 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, RouteObject } from 'react-router-dom'
 
-const routes = [
+const routes: RouteObject[] = [
   { path: '/', element: <div>page index</div> },
   { path: '/editor', element: <div>page editor</div> }
 ]

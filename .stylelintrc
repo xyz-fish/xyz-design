@@ -1,0 +1,12 @@
+{
+	"extends": [
+		"stylelint-config-recess-order",
+		"stylelint-prettier/recommended"
+	],
+	"plugins": [
+		"stylelint-scss"
+	],
+	"defaultSeverity": "warning",
+	"syntax": "scss",
+	"rules": {}
+}
