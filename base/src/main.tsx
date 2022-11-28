@@ -1,10 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import { createRoot } from 'react-dom/client'
+import RouterElement from '@/router'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+import '@unocss/reset/tailwind.css'
+
+import './index.scss'
+
+createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <RouterElement />
   </React.StrictMode>
 )
