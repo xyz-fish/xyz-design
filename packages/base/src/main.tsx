@@ -1,7 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import RouterElement from '@/router'
-
+import 'uno.css'
 import '@unocss/reset/tailwind.css'
 
 import './index.scss'
