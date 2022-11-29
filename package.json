@@ -1,48 +1,51 @@
 {
-	"name": "xyz-design",
-	"version": "1.0.0",
-	"description": "",
-	"packageManager": "pnpm@7.17.1",
-	"scripts": {
-		"lint:js": "eslint --fix",
-		"prettier": "prettier --write .",
-		"lint:style": "stylelint '**/*.scss'",
-		"prepare": "husky install"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"workspaces": [
-		"packages/*"
-	],
-	"dependencies": {
-		"lerna": "^4.0.0"
-	},
-	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.44.0",
-		"@typescript-eslint/parser": "^5.44.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-react": "^7.31.11",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"husky": "^8.0.2",
-		"lint-staged": "^13.0.4",
-		"prettier": "^2.8.0",
-		"stylelint": "^14.15.0",
-		"stylelint-config-prettier": "^9.0.4",
-		"stylelint-config-recess-order": "^3.0.0",
-		"stylelint-config-standard": "^29.0.0",
-		"stylelint-prettier": "^2.0.0",
-		"stylelint-scss": "^4.3.0",
-		"typescript": "^4.9.3"
-	},
-	"lint-staged": {
-		"*{.ts,.js,tsx,jsx}": [
-			"eslint --fix ."
-		],
-		"*.scss": [
-			"stylelint"
-		]
-	}
+  "name": "xyz-design",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@7.17.1",
+  "scripts": {
+    "lint:js": "eslint --fix",
+    "prettier": "prettier --write .",
+    "lint:style": "stylelint '**/*.scss'",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "lerna": "^4.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0",
+    "typescript": "^4.9.3"
+  },
+  "lint-staged": {
+    "*{.ts,.js,tsx,jsx}": [
+      "eslint --fix ."
+    ],
+    "*.scss": [
+      "stylelint"
+    ]
+  }
 }
